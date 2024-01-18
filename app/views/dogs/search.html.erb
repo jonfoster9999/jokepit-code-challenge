@@ -1,0 +1,24 @@
+<div class="h-20 flex items-center" style="background-color: rgb(45, 105, 155);">
+  <img src="/jokepit.svg" class="ml-4 mr-4" height="150px" width="150px" alt="">
+  <span class="text-white">Code Challenge</span>
+</div>
+
+<div class="grid grid-cols-2 gap-1 p-10 mt-10">
+  <div id="form-holder" class="w-full max-w-md">
+    <form data-controller="dogs" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" data-action="submit->dogs#fetchDog">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="breed">
+          Breed
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="breed" id="breed" type="text" placeholder="Breed">
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="result"></div>
+</div>
